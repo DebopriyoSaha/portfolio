@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                line-height: 1.6;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-top: 20px;
+                font-weight: bold;
+                color: #222;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin: 10px auto;
+                max-width: 600px;
+            }
+
+            .contact-info {
+                margin: 30px auto;
+                display: inline-block;
+                text-align: left;
+                font-size: 1.2rem;
+            }
+
+            .contact-info p {
+                margin: 10px 0;
+            }
+
+            .contact-info a {
+                color: #0056b3;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+
+            .icon {
+                width: 30px;
+                height: auto;
+                vertical-align: middle;
+                transition: transform 0.3s ease;
+            }
+
+            .icon:hover {
+                transform: scale(1.2);
+            }
+
+            form {
+                margin: 20px auto;
+                max-width: 600px;
+                text-align: left;
+            }
+
+            input, textarea, button {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 10px;
+                font-size: 1rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            button {
+                background-color: #0056b3;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #003d80;
+            }
+
+            a.home {
+                display: block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                color: #003d80;
+                width: fit-content;
+                text-decoration: none;
+            }
+
+            a.home:hover {
+                text-decoration: underline;
+            }
+
+            footer > p {
+                margin-top: 50px;
+                font-size: 0.9rem;
+                color: #555;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+            <p><strong>Tel:</strong> +1 (514) 575-9582</p>
+            <p><strong>Email:</strong> <a href="mailto:debopriyosaha10@gmail.com">debopriyosaha10@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/debopriyosaha/" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/linkedin.png" alt="LinkedIn" class="icon">
+            </a></p>
+        </div>
+        <h2>Get in Touch</h2>
+        <form action="mailto:debopriyosaha10@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br/>
+            <input type="text" id="name" name="name" required><br/>
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email" required><br/>
+            <label for="message">Message:</label><br/>
+            <textarea id="message" name="message" rows="5" required></textarea><br/>
+            <button type="submit">Send</button>
+        </form>
+        <a href="../index.html" class="home">Home</a>
+        <footer>
+            <p>&copy; 2025 Debopriyo Saha. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
